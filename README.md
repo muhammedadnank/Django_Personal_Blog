@@ -5,6 +5,18 @@
   <img src="screenshots/dark_mode.png" width="48%" alt="Dark Mode">
 </p>
 
+### Reading Experience
+<p align="center">
+  <img src="screenshots/article_read_1.png" width="48%" alt="Article Header">
+  <img src="screenshots/article_read_2.png" width="48%" alt="Comments Section">
+</p>
+
+### Reading Experience
+<p align="center">
+  <img src="screenshots/article_read_1.png" width="48%" alt="Article Header">
+  <img src="screenshots/article_read_2.png" width="48%" alt="Comments Section">
+</p>
+
 A modern, responsive, and feature-rich personal blog built with Django. Designed with a focus on typography, reading experience, and premium aesthetics.
 
 ## 🌟 Features
