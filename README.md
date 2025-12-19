@@ -1,5 +1,7 @@
 # Premium Personal Blog
 
+![Project Screenshot](screenshots/blog_preview.png)
+
 A modern, responsive, and feature-rich personal blog built with Django. Designed with a focus on typography, reading experience, and premium aesthetics.
 
 ## 🌟 Features
