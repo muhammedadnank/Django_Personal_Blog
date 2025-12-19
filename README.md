@@ -1,6 +1,9 @@
 # Premium Personal Blog
 
-![Project Screenshot](screenshots/blog_preview.png)
+<p align="center">
+  <img src="screenshots/light_mode.png" width="48%" alt="Light Mode">
+  <img src="screenshots/dark_mode.png" width="48%" alt="Dark Mode">
+</p>
 
 A modern, responsive, and feature-rich personal blog built with Django. Designed with a focus on typography, reading experience, and premium aesthetics.
 
