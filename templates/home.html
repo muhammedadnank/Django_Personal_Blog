@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="hero-section">
+    <div class="hero-content">
+        <h1>Explorations in Code & Life</h1>
+        <p>Welcome to my digital garden. Here I share insights, tutorials, and stories.</p>
+        
+        <form method="GET" action="{% url 'home' %}" class="search-form">
+            <input type="text" name="q" placeholder="Search articles..." value="{{ query|default:'' }}">
+            <button type="submit">Search</button>
+        </form>
+
+        {% if categories %}
+        <div class="category-list">
+            <a href="{% url 'home' %}" class="cat-link {% if not request.GET.category %}active{% endif %}">All</a>
+            {% for cat in categories %}
+            <a href="{% url 'home' %}?category={{ cat.slug }}" class="cat-link {% if request.GET.category == cat.slug %}active{% endif %}">{{ cat.name }}</a>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</section>
+
+<section class="post-grid">
+    {% for post in posts %}
+    <article class="post-card">
+        {% if post.featured_image %}
+        <a href="{% url 'post_detail' post.slug %}" class="post-image-link">
+            <div class="post-image">
+                <img src="{{ post.featured_image.url }}" alt="{{ post.title }}">
+            </div>
+        </a>
+        {% endif %}
+        <div class="post-content">
+            <div class="post-meta-top">
+                <span class="post-date">{{ post.created_at|date:"M d, Y" }}</span>
+                <span class="read-time">• {{ post.get_reading_time }} min read</span>
+            </div>
+            <h2><a href="{% url 'post_detail' post.slug %}">{{ post.title }}</a></h2>
+            <p>{{ post.content|truncatewords:25 }}</p>
+            <a href="{% url 'post_detail' post.slug %}" class="read-more">Read Article</a>
+        </div>
+    </article>
+    {% empty %}
+    <p>No posts published yet.</p>
+    {% endfor %}
+</section>
+{% endblock %}
