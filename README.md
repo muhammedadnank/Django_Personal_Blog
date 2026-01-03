@@ -15,11 +15,6 @@ A modern, responsive, and feature-rich personal blog built with Django. Designed
 
 ## 🌟 Features
 
-### 🎨 Design & UI
-*   **Premium Aesthetic**: Clean "Slate & Sky" color palette using modern CSS variables.
-*   **Dark Mode 🌙**: Fully functional dark theme with a persistent toggle (saves to localStorage).
-*   **Responsive**: Mobile-first design with a grid layout for posts and a responsive navigation.
-*   **Typography**: Optimized for readability using *Inter* (UI) and *Playfair Display* (Headings).
 
 ### 🚀 Functionality
 *   **Search**: Full-text search for posts and tags.
